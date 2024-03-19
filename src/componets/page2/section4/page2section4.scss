@@ -1,0 +1,68 @@
+@import '../../../sass/globle.scss';
+
+
+.P2s4_Bg {
+    padding: 20px 0 100px 0;
+    border-bottom: 2px solid var(--theme-d0d0d0-text-color);
+
+    @media (max-width:1024px) {
+        padding: 0 62px;
+    }
+
+    @media (max-width:768px) {
+        padding: 62px 150px;
+        border: none;
+    }
+
+    @media (max-width:576px) {
+        width: 100%;
+        overflow-y: scroll;
+        padding: 30px 60px;
+        border: none;
+    }
+
+    .p2s4_main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        @media (max-width:768px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 50px;
+        }
+
+        @media (max-width:576px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+
+        .p2s4_cart {
+            @include displayFlex_directionColumn;
+            width: 423px;
+            gap: 30px;
+            height: 197px;
+
+            @media (max-width:576px) {
+                width: 340px;
+                height: auto;
+                gap: 20px;
+            }
+
+            h4 {
+                @include Boxdetalis;
+            }
+
+            p {
+                width: 443px;
+                @include details;
+                color: var(--theme-323232-text-color);
+
+
+                @media (max-width:576px) {
+                    width: 360px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

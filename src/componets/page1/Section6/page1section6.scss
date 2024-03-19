@@ -1,0 +1,110 @@
+@import '../../../sass/globle.scss';
+
+.P1s6bg {
+    background-color: var(--theme-white-color);
+}
+
+.P1s6 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+
+    @media (max-width:1024px) {
+        padding: 0 40px;
+    }
+
+    @media (max-width:768px) {
+        grid-template-columns: 100%;
+        padding: 0 100px;
+    }
+
+    @media (max-width:576px) {
+        grid-template-columns: 100%;
+        padding: 0 40px;
+    }
+
+    .p1s6-part-heading {
+        width: 367px;
+        height: 36px;
+        @include Smallheading;
+        margin: 10px;
+    }
+
+    .P1s6-part {
+
+        .p1s6-cart {
+            cursor: pointer;
+            @include displayFlex;
+            flex-direction: column;
+
+            .part-box {
+                padding: 20px 0;
+                @include displayFlex_AlignItem-center;
+                gap: 20px;
+                border-bottom: 1px solid #d0d0d0;
+
+                img {
+                    transition: .5s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.02);
+                        transition: .5s ease-in-out;
+                    }
+                }
+
+                .p1s6-text {
+                    @include displayFlex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h6 {
+                        height: 24px;
+                        @include cartheading;
+                        transition: .5s ease-in-out;
+
+                        &:hover {
+                            color: var(--theme-primary-color);
+                            transition: .5s ease-in-out;
+                        }
+                    }
+
+                    p {
+                        width: 349px;
+                        height: 56px;
+                        @include details;
+
+                        @media (max-width:1024px) {
+                            width: 251px;
+                            height: 84px;
+                        }
+
+                        @media (max-width:768px) {
+                            width: 349px;
+                            height: 56px;
+                        }
+
+                        @media (max-width:576px) {
+                            width: 251px;
+                            height: 84px;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    border: none;
+
+                    @media (max-width:768px) {
+                        border-bottom: 1px solid #d0d0d0;
+                    }
+                }
+
+                &:nth-child(1) {
+
+                    @media (max-width:768px) {
+                        border-top: 1px solid #d0d0d0;
+                    }
+                }
+            }
+        }
+    }
+}

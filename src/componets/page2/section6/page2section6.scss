@@ -1,0 +1,101 @@
+@import '../../../sass/globle.scss';
+
+@import '../../page1/page1.scss';
+
+.P2S6_Bg {
+    padding: 100px 0;
+
+    @media (max-width:1024px) {
+        padding: 80px 40px;
+    }
+
+    .P2s6 {
+        @include displayFlex_AlignItem-center;
+        gap: 117px;
+
+        @media (max-width:768px) {
+            gap: 80px;
+        }
+
+        @media (max-width:576px) {
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .p2s6_img {
+            img {
+                display: block;
+                object-fit: cover;
+                transition: 0.5s ease-in-out;
+
+                @media (max-width:768px) {
+                    width: 300px;
+                }
+
+                @media (max-width:576px) {
+                    width: 463px;
+                }
+
+                &:hover {
+                    transform: scale(1.04);
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+
+        .P1s12Right {
+            @include displayFlex;
+            flex-direction: column;
+            gap: 60px;
+            cursor: pointer;
+
+            .P1s12RTop {
+                @include displayFlex;
+                flex-direction: column;
+                gap: 30px;
+
+
+                h4 {
+                    width: 463px;
+                    height: 36px;
+                    @include Smallheading;
+                    font-weight: 700 !important;
+
+                    @media (max-width:768px) {
+                        max-width: 300px;
+                        height: auto;
+                    }
+
+                    @media (max-width:576px) {
+                        max-width: 463px;
+                        height: auto;
+                    }
+                }
+
+                p {
+                    width: 463px;
+                    height: 140px;
+                    @include cartdetails;
+
+                    @media (max-width:768px) {
+                        max-width: 300px;
+                        height: auto;
+                    }
+
+                    @media (max-width:576px) {
+                        max-width: 463px;
+                        height: auto;
+                    }
+                }
+            }
+
+            h6 {
+                width: 247px;
+                height: 24px;
+                @include cartheading;
+                font-weight: 500 !important;
+                color: var(--theme-primary-color) !important;
+            }
+        }
+    }
+}

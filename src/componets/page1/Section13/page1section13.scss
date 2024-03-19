@@ -1,0 +1,39 @@
+@import '../../../sass/globle.scss';
+
+.p1s13 {
+    .P1s3 {
+        align-items: flex-start !important;
+        padding: 0 60px;
+
+        @media (max-width:576px) {
+            align-items: center !important;
+        }
+
+        p {
+            @include displayFlex_JustifyContent-SpaceBetween;
+            gap: 20px;
+
+            span {
+                max-width: 560px;
+            }
+
+            h6 {
+                margin-top: 20px;
+                width: 247px;
+                height: 24px;
+                @include cartheading;
+                font-weight: 500 !important;
+                color: var(--theme-primary-color) !important;
+            }
+        }
+    }
+
+    .P1s5bg {
+        padding-left: 0;
+        padding-right: 0;
+
+        @media (max-width:576px) {
+            padding: 40px 0;
+        }
+    }
+}

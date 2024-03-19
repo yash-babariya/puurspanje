@@ -1,0 +1,50 @@
+@import '../../../sass/globle.scss';
+
+.P1s10bg {
+    padding-bottom: 100px;
+}
+
+.P1s10 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+
+    @media (max-width:768px) {
+        padding: 0 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 682px;
+        overflow-y: scroll;
+    }
+
+    @media (max-width:576px) {
+        width: 496px;
+        overflow-y: scroll;
+    }
+
+    .P1s10-box {
+        @include displayFlex;
+        flex-direction: column;
+        gap: 30px;
+        height: 253px;
+
+        @media (max-width:768px) {
+            width: 340px;
+            height: 253px;
+
+        }
+
+        @media (max-width:576px) {
+            width: 300px;
+            height: 253px;
+
+        }
+
+        h4 {
+            @include Boxdetalis;
+        }
+
+        p {
+            @include cartdetails;
+        }
+    }
+}

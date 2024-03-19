@@ -1,0 +1,19 @@
+@import '../../../sass/globle.scss';
+
+@import '../Section5/page1section5.scss';
+
+.P1s7 {
+    margin-top: 80px;
+    border-top: 1px solid #d0d0d0;
+
+    @media (max-width:768px) {
+        margin-top: 20px;
+        border: none;
+    }
+
+    .P1s5bg {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+}

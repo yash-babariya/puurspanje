@@ -1,0 +1,72 @@
+@import '../../../sass/globle.scss';
+
+.P1s2bg {
+    background-color: var(--theme-white-color);
+    padding: 40px 0;
+
+    .P1s2 {
+        cursor: pointer;
+        width: 946px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @media (max-width:1024px) {
+            width: 550px;
+            gap: 10px;
+        }
+
+        @media (max-width:576px) {
+            width: 400px;
+            padding: 0 30px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .p1s2-box {
+            @include displayFlex_JustifyContent-SpaceBetween_AlignItem-center;
+            height: 72px;
+            border: 1px solid #d0d0d0;
+            padding: 20px;
+            border-radius: 2px;
+
+            &:hover {
+                transform: scale(1.009);
+                border: 1px solid var(--theme-header-top-background-color);
+                transition: .5s ease-in-out;
+            }
+
+
+            @media (max-width:1024px) {
+                padding: 10px;
+                height: 52px;
+            }
+
+            .p1s1-box-text {
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 2%;
+                    font-weight: 600;
+                    color: var(--theme-050505-text-color);
+
+                    @media (max-width:1024px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .p1s1-box-icon {
+                img {
+                    width: 32px;
+                    height: 32px;
+
+                    @media (max-width:1024px) {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

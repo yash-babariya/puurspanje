@@ -1,0 +1,14 @@
+@import '../../../sass/globle.scss';
+
+@import '../Section7/page1section7.scss';
+
+.P1s9bg {
+    background-color: var(--theme-white-color);
+    padding-bottom: 80px;
+
+    .P1s3 {
+        h4 {
+            width: fit-content;
+        }
+    }
+}

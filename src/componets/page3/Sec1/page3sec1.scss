@@ -1,0 +1,40 @@
+@import '../../../sass/globle.scss';
+
+@import '../../page2/page2.scss';
+
+
+.P3S1_Bg {
+    padding-bottom: 60px;
+
+    .P3s1 {
+        padding: 22px 0;
+        @include displayFlex_AlignItem-center;
+        gap: 5px;
+        border-bottom: 2px solid var(--theme-d0d0d0-text-color);
+
+        @media (max-width:1024px) {
+            margin: 0px 40px;
+        }
+
+        span {
+            cursor: pointer;
+            @include liteText;
+        }
+
+        .RightArrow {
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            font-weight: 100;
+            transition: 0.5s ease-in-out;
+            color: var(--theme-323232-text-color);
+
+            &:hover {
+                color: var(--theme-primary-color);
+                transform: translateX(1px);
+                transition: 0.5s ease-in-out;
+            }
+        }
+    }
+}

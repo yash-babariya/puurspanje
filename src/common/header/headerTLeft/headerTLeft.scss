@@ -1,0 +1,23 @@
+@import '../header.scss';
+
+.headerTLeft {
+    @include displayFlex_AlignItem-center;
+    gap: 12px;
+
+    .star {
+        .StarIcon {
+            font-size: 20px;
+            color: var(--theme-header-star-color);
+        }
+    }
+
+    .headerTLtext {
+        p {
+            @include HeaderFont;
+
+            &::selection {
+                background-color: var(--theme-black-color);
+            }
+        }
+    }
+}

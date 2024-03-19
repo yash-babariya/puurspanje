@@ -1,0 +1,25 @@
+@import '../../../sass/globle.scss';
+
+@import '../../page1/page1.scss';
+
+.P2s3_bg {
+    .P1s3bg {
+        @media (max-width:768px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .P1s3 {
+            p {
+                span {
+                    color: var(--theme-primary-color) !important;
+                }
+            }
+
+            @media (max-width:576px) {
+                padding: 0;
+
+            }
+        }
+    }
+}

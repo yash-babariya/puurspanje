@@ -1,0 +1,95 @@
+@mixin HeaderFont {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 2%;
+    font-weight: 500;
+    color: var(--theme-white-color);
+}
+
+@mixin H1box-itemP {
+    width: 38px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--theme-323232-text-color);
+    margin-bottom: 5px;
+}
+
+@mixin H1box-itemh5 {
+    @include displayFlex_JustifyContent-SpaceBetween_AlignItem-center;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--theme-050505-text-color);
+}
+
+@mixin h4heading {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    color: var(--theme-050505-text-color);
+
+    @media (max-width:1024px) {
+        font-size: 26px;
+    }
+}
+
+@mixin details {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 2%;
+}
+
+@mixin cartdetails {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--theme-323232-text-color);
+}
+
+@mixin Smallheading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: var(--theme-050505-text-color);
+}
+
+@mixin cartheading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 2%;
+    color: var(--theme-050505-text-color);
+}
+
+@mixin Boxdetalis {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--theme-050505-text-color);
+}
+
+@mixin cartText {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+@mixin liteText {
+    color: var(--Text, #323232);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.24px;
+}
+
+
+@mixin headingMain {
+    color: var(--theme-050505-text-color);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+}

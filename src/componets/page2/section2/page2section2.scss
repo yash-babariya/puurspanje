@@ -1,0 +1,116 @@
+@import '../../../sass/globle.scss';
+
+@import '../../page1/page1.scss';
+
+
+.P2s2_Bg {
+    padding-bottom: 80px;
+
+    @media (max-width:1024px) {
+        padding: 0px 40px 80px 40px;
+    }
+
+    .p2s2_main {
+        @include displayFlex_directionColumn;
+        gap: 40px;
+
+        .p2s2_Top {
+            h2 {
+                @include Smallheading;
+            }
+        }
+
+        .p2s2_Bottam {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            @media (max-width:1024px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width:576px) {
+                grid-template-columns: repeat(6, 1fr);
+                overflow-x: scroll;
+            }
+
+            .p2s2_cart {
+                width: 367px;
+                height: 671px;
+                transition: 0.5s ease-in-out;
+                cursor: pointer;
+
+
+                &:hover {
+                    transform: scale(1.04);
+                    transition: 0.5s ease-in-out;
+                }
+
+                @media (max-width:1024px) {
+                    width: 328px;
+                    height: 679px;
+                }
+
+                .P2s2_cartimg {
+                    width: 100%;
+
+                    @media (max-width:1024px) {
+                        width: 328px;
+                    }
+
+                    img {
+                        width: 100%;
+                        display: block;
+                        object-fit: cover;
+                    }
+                }
+
+                .P2s2_cartText {
+                    @include displayFlex_directionColumn;
+                    gap: 20px;
+                    padding: 40px 40px 40px 30px;
+                    width: 100%;
+                    height: 286px;
+                    background-color: var(--theme-footer-background-color);
+
+                    @media (max-width:768px) {
+                        padding: 30px 20px;
+                        height: 310px;
+                    }
+
+
+                    .p2s2_Text_T {
+                        @include displayFlex_directionColumn;
+                        gap: 10px;
+
+                        h4 {
+                            color: var(--theme-white-color);
+                            @include cartText;
+                        }
+
+                        p {
+                            height: 112px;
+                            color: var(--theme-white-color) !important;
+                            @include cartdetails;
+                        }
+                    }
+
+                    .p2s2_arrow {
+                        cursor: pointer;
+                        @include displayFlex_AlignItem-JustifyContent-center;
+                        width: 40px;
+                        height: 40px;
+                        background-color: var(--theme-white-color);
+                        border-radius: 50%;
+                        transition: .5s ease-in-out;
+
+                        &:hover {
+                            transition: .5s ease-in-out;
+                            transform: translateX(10px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+@import '../../../sass/globle.scss';
+
+.P1s12bg {
+    background-color: var(--theme-white-color);
+    padding: 100px 0;
+    @include displayFlex_AlignItem-center;
+    gap: 160px;
+
+    @media (max-width:1024px) {
+        gap: 50px;
+    }
+
+    @media (max-width:576px) {
+        padding: 50px 0;
+    }
+
+    @media (max-width:1000px) {
+        flex-direction: column;
+    }
+
+
+    .P1s12Left {
+        @include displayFlex_AlignItem-center;
+        gap: 30px;
+
+
+        @media (max-width:1024px) {
+            gap: 20px;
+        }
+
+        @media (max-width:576px) {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .img1 {
+
+            img {
+                width: 134px;
+                height: 300px;
+                object-fit: cover;
+
+                @media (max-width:1024px) {
+                    width: 80px;
+                    height: 250px;
+                }
+
+                @media (max-width:768px) {
+                    width: 134px;
+                    height: 300px;
+                    object-fit: cover;
+                }
+
+
+            }
+
+        }
+
+        .img2 {
+            img {
+                width: 174px;
+                height: 300px;
+                object-fit: cover;
+
+                @media (max-width:1024px) {
+                    width: 130px;
+                    height: 250px;
+                }
+
+                @media (max-width:768px) {
+                    width: 174px;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+
+            @media (max-width:768px) {
+                order: 3;
+            }
+        }
+
+        .img3 {
+
+            img {
+                width: 366px;
+                height: 600px;
+                object-fit: cover;
+
+                @media (max-width:1024px) {
+                    width: 250px;
+                    height: 400px;
+                }
+
+                @media (max-width:768px) {
+                    width: 300px;
+                    height: 500px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .P1s12Right {
+        @include displayFlex;
+        flex-direction: column;
+        gap: 60px;
+        cursor: pointer;
+
+        .P1s12RTop {
+            @include displayFlex;
+            flex-direction: column;
+            gap: 30px;
+
+
+            h4 {
+                width: 463px;
+                height: 36px;
+                @include Smallheading;
+                font-weight: 700 !important;
+
+                @media (max-width:1024px) {
+                    max-width: 422px;
+                }
+            }
+
+            p {
+                width: 463px;
+                height: 140px;
+                @include cartdetails;
+
+                @media (max-width:1024px) {
+                    max-width: 422px;
+                }
+            }
+
+            h5 {
+                width: 463px;
+                height: 14px;
+                @include cartdetails;
+                color: var(--theme-949494-text-color);
+
+                @media (max-width:1024px) {
+                    max-width: 422px;
+                }
+            }
+        }
+
+        h6 {
+            width: 247px;
+            height: 24px;
+            @include cartheading;
+            font-weight: 500 !important;
+            color: var(--theme-primary-color) !important;
+        }
+    }
+}

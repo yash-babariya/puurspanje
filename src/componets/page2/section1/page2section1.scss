@@ -1,0 +1,22 @@
+@import '../../../sass/globle.scss';
+
+@import '../../page1/page1.scss';
+
+.p2s1 {
+    .P1s3 {
+        padding: 0 !important;
+
+        @media (max-width:1024px) {
+            padding: 0 60px !important;
+        }
+    }
+}
+
+.p2s1_border {
+    border: 1px solid var(--theme-d0d0d0-text-color);
+    margin: 0 0 80px 0;
+
+    @media (max-width:576px) {
+        margin: 0 20px 80px 20px;
+    }
+}

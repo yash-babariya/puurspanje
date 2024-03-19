@@ -1,0 +1,94 @@
+@import '../../../sass/globle.scss';
+
+.P1s16 {
+    .P1s16_heroBanner {
+        position: relative;
+        width: 100%;
+        height: 400px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .P1s16_blackBg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.3);
+
+            .P1s16_text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @include displayFlex;
+                flex-direction: column;
+                gap: 40px;
+
+                .P1s16_textTop {
+                    @include displayFlex_AlignItem-center;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h4 {
+                        text-align: center;
+                        width: 547px;
+                        height: 48px;
+                        @include h4heading;
+                        color: var(--theme-white-color) !important;
+
+                        @media (max-width:576px) {
+                            @include Boxdetalis;
+                            width: 297px;
+                            height: 54px;
+                        }
+                    }
+
+                    p {
+                        text-align: center;
+                        max-width: 560px;
+                        height: 56px;
+                        @include details;
+                        color: var(--theme-white-color) !important;
+
+                        @media (max-width:576px) {
+                            @include cartdetails;
+                            width: 297px;
+                            height: 84px;
+                        }
+                    }
+
+                }
+
+                .P1s16_textBottam {
+                    text-align: center;
+                    width: 550px;
+
+                    button {
+                        cursor: pointer;
+                        @include cartheading;
+                        padding: 12px, 24px, 12px, 24px;
+                        width: 317px;
+                        height: 48px;
+                        border-radius: 4px;
+                        background-color: var(--theme-white-color);
+                        border: 1px solid var(--theme-f3f4f5-text-color);
+                        transition: .7s ease-in-out;
+
+
+                        &:hover {
+                            background-color: var(--theme-primary-color);
+                            color: var(--theme-white-color) !important;
+                            transition: .7s ease-in-out;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

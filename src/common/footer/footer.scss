@@ -72,7 +72,7 @@
         }
 
         .p1s17_Middle_r {
-            width: 558px;
+            max-width: 558px;
             @include displayFlex;
             flex-direction: column;
             gap: 16px;
@@ -98,7 +98,7 @@
                 position: relative;
 
                 @media (max-width:576px) {
-                    width: 500px;
+                    max-width: 500px;
                 }
 
                 input {

@@ -10,7 +10,8 @@
 }
 
 .P1s3 {
-    @include displayFlex_JustifyContent-center;
+    @include displayFlex;
+    justify-content: space-between;
     align-items: flex-start !important;
 
     @media (max-width:576px) {
@@ -26,20 +27,20 @@
 
     h4 {
         @include h4heading;
-        width: 560px;
+        max-width: 560px;
 
         @media (max-width:1024px) {
-            width: 462px;
+            max-width: 462px;
         }
 
     }
 
     p {
         @include details;
-        width: 560px;
+        max-width: 560px;
 
         @media (max-width:1024px) {
-            width: 462px;
+            max-width: 462px;
         }
     }
 }

@@ -4,11 +4,9 @@
     background-color: var(--theme-white-color);
     padding: 100px 0;
     @include displayFlex_AlignItem-center;
-    gap: 160px;
+    justify-content: space-between;
+    gap: 20px;
 
-    @media (max-width:1024px) {
-        gap: 50px;
-    }
 
     @media (max-width:576px) {
         padding: 50px 0;
@@ -29,7 +27,7 @@
         }
 
         @media (max-width:576px) {
-            width: 100%;
+            max-width: 100%;
             overflow: hidden;
         }
 
@@ -113,8 +111,7 @@
 
 
             h4 {
-                width: 463px;
-                height: 36px;
+                max-width: 463px;
                 @include Smallheading;
                 font-weight: 700 !important;
 
@@ -124,8 +121,7 @@
             }
 
             p {
-                width: 463px;
-                height: 140px;
+                max-width: 463px;
                 @include cartdetails;
 
                 @media (max-width:1024px) {
@@ -134,8 +130,7 @@
             }
 
             h5 {
-                width: 463px;
-                height: 14px;
+                max-width: 463px;
                 @include cartdetails;
                 color: var(--theme-949494-text-color);
 

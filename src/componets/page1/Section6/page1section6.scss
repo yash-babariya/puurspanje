@@ -6,8 +6,9 @@
 
 .P1s6 {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: calc(50% - 20px) calc(50% - 20px);
     gap: 40px;
+
 
     @media (max-width:1024px) {
         padding: 0 40px;
@@ -24,8 +25,7 @@
     }
 
     .p1s6-part-heading {
-        width: 367px;
-        height: 36px;
+        max-width: 367px;
         @include Smallheading;
         margin: 10px;
     }
@@ -69,23 +69,19 @@
                     }
 
                     p {
-                        width: 349px;
-                        height: 56px;
+                        max-width: 349px;
                         @include details;
 
                         @media (max-width:1024px) {
-                            width: 251px;
-                            height: 84px;
+                            max-width: 251px;
                         }
 
                         @media (max-width:768px) {
-                            width: 349px;
-                            height: 56px;
+                            max-width: 349px;
                         }
 
                         @media (max-width:576px) {
-                            width: 251px;
-                            height: 84px;
+                            max-width: 251px;
                         }
                     }
                 }

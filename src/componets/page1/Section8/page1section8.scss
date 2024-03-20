@@ -14,7 +14,7 @@
     }
 
     @media (max-width:768px) {
-        width: 686px;
+        max-width: 686px;
         overflow-x: scroll;
     }
 }
@@ -26,7 +26,6 @@
 
     .heading {
         width: 359px;
-        height: 36px;
 
         h4 {
             @include Smallheading;
@@ -35,7 +34,6 @@
 
     @media (max-width:1024px) {
         width: 100%;
-        padding: 0 40px;
     }
 
     .P1s8-cart {
@@ -51,12 +49,13 @@
             gap: 5px;
 
             img {
-                width: 367px;
+                width: 100%;
+                object-fit: cover;
                 height: 200px;
+                overflow-x: scroll;
                 transition: .5s ease-in-out;
 
                 @media (max-width:1024px) {
-                    width: 300px;
                     height: 160px;
                 }
 

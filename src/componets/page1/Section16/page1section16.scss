@@ -51,14 +51,13 @@
                     p {
                         text-align: center;
                         max-width: 560px;
-                        height: 56px;
+
                         @include details;
                         color: var(--theme-white-color) !important;
 
                         @media (max-width:576px) {
                             @include cartdetails;
-                            width: 297px;
-                            height: 84px;
+                            max-width: 297px;
                         }
                     }
 
@@ -66,7 +65,7 @@
 
                 .P1s16_textBottam {
                     text-align: center;
-                    width: 550px;
+                    max-width: 550px;
 
                     button {
                         cursor: pointer;

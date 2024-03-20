@@ -12,12 +12,12 @@
     @media (max-width:768px) {
         padding: 0 40px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        width: 682px;
+        max-width: 682px;
         overflow-y: scroll;
     }
 
     @media (max-width:576px) {
-        width: 496px;
+        max-width: 496px;
         overflow-y: scroll;
     }
 
